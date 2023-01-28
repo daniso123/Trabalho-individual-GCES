@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster 
+FROM python:3.9
  
 WORKDIR /app 
  
@@ -9,4 +9,5 @@ COPY . .
 
 EXPOSE 8000
  
-CMD ["python", "src/main.py"]
+#CMD python main.py
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
